@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+  <h1>WA</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="apropos.html">À propos</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+    <h1>Contactez-moi</h1>
+  <main>
+    <form>
+      <label>Nom : <input type="text" name="nom" required></label><br>
+      <label>Prénom : <input type="text" name="prenom" required></label><br>
+      <label>Âge : <input type="number" name="age" required></label><br>
+      <label>Email : <input type="email" name="email" required></label><br>
+      <label>Téléphone : <input type="tel" name="tel"></label><br>
+      <label>Site Web : <input type="url" name="url"></label><br>
+
+      <label>Sujet :
+        <select name="sujet">
+          <option>Demande d'information</option>
+          <option>Proposition de projet</option>
+          <option>Autre</option>
+        </select>
+      </label><br>
+
+      <p>Préférence de contact :</p>
+      <label><input type="radio" name="contact" value="email"> Email</label>
+      <label><input type="radio" name="contact" value="tel"> Téléphone</label><br>
+
+      <label><input type="checkbox" name="newsletter"> S'inscrire à la newsletter</label><br>
+
+      <label>Message :<br>
+        <textarea name="message" required></textarea>
+      </label><br>
+
+      <label>Date de disponibilité : <input type="date" name="date"></label><br>
+      <label>Heure de contact préférée : <input type="time" name="heure"></label><br>
+
+      <button type="submit">Envoyer</button>
+      <button type="reset">Réinitialiser</button>
+    </form>
+
+    <div id="confirmation"></div>
+  </main>
+
+  <footer>
+    <p>&copy;  Wafiq AGUEH</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
